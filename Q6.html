@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Question 6 
+</title>
+<style>
+td{
+position: relative;
+text-align:center;
+height:100px;
+width:120px;
+}
+
+.subCell{
+position: relative;
+width : 100%;
+margin:0;
+padding:0;
+}
+
+.subFive{
+height : 20%;
+}
+
+.subHalf{
+height : 50%;
+}
+.subFull{
+height : 100%;
+}
+.subCellCh{
+position : absolute;
+height : 100%;
+width : 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.subCellCh .subject{
+font-size: 24px;
+font-weight:bold;
+text-align:center;
+}
+.subCellCh .subjectMin{
+font-size: 14px;
+text-align:center;
+}
+
+.subCellCh .subText{
+position : absolute;
+font-size: 10px;
+font-weight:bold;
+}
+.subCellCh .subTextMin{
+position : absolute;
+font-size: 8px;
+font-weight:bold;
+}
+
+.subCellCh .btmlft{
+bottom:0px;
+left:0px;
+}
+
+.subCellCh .btmrt{
+bottom:0px;
+right:0px;
+}
+
+.subCellCh .toprt{
+top:0;
+right:0;
+}
+.subCellCh .toprtLess{
+top:-7px;
+right:0;
+}
+.subCellCh .btmore{
+bottom:-7px;
+}
+.subBorder{
+border-bottom: 2px solid Black;
+}
+.subWidth1{
+width:66%;
+float:left;
+position : absolute;
+}
+
+.subWidth2{
+width:34%;
+float:left;
+position : absolute;
+}
+.subRight{
+right:0;
+border-left	: 2px solid Black;
+}
+</style>
+</head>
+<body bgcolor="#e0ffe1">
+<table cellspacing="0" border="2">
+<th bgcolor="#152238" colspan="9" height="30px"><font color="white">Time-Table</font></th>
+<tr>
+<td></td>
+<td><p><b>1</b></p><small>9:00-9:50</small></td>
+<td><p><b>2</b></p><small>9:50-10:40</small></td>
+<td><p><b>3</b></p><small>10:40-11:30</small></td>
+<td><p><b>4</b></p><small>11:30-12:20</small></td>
+<td><p><b>Lunch Break</b></p><small>12:20-1:30</small></td>
+<td><p><b>5</b></p><small>1:30-2:20</small></td>
+<td><p><b>6</b></p><small>2:20-3:10</small></td>
+<td><p><b>7</b></p><small>3:10-4:00</small></td>
+</tr>
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Monday</p>
+</div>
+</div>
+
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-301</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">LT-8</p>
+<p class="btmrt subText">MSAI</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">FLT-3</p>
+<p class="btmrt subText">MI</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-13</p>
+<p class="btmrt btmore subTextMin">ECE-SQ</p>
+<p class="toprt toprtLess subTextMin">Group-1</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">FLT-3</p>
+<p class="btmrt btmore subTextMin">ECE-SH</p>
+<p class="toprt toprtLess subTextMin">Group-2</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-2</p>
+<p class="btmrt btmore subTextMin">ECE-IK</p>
+<p class="toprt toprtLess subTextMin">Group-3</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-308</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-8</p>
+<p class="btmrt btmore subTextMin">SKS</p>
+<p class="toprt toprtLess subTextMin">Group-4</p>
+</div>
+</div>
+<div class="subCell subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-9</p>
+<p class="btmrt btmore subTextMin">CA-Farooq</p>
+<p class="toprt toprtLess subTextMin">Group-5</p>
+</div>
+</div>
+</td>
+
+<td rowspan="6">
+<div class="RotateText">
+<p>Lunch Break</p>
+</div>
+</td>
+
+<td colspan="3">
+<div class="subCell subBorder subHalf">
+<div class="subCellCh">
+<p class="subject">CA-311</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-1</p>
+<p class="btmrt subText">NJ/TSS-CA-AK</p>
+<p class="toprt subText">Group-1</p>
+</div>
+</div>
+<div class="subCell subHalf">
+<div class="subCellCh">
+<p class="subject">CA-310</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-7</p>
+<p class="btmrt subText">MI/TSS-CA-Adnan</p>
+<p class="toprt subText">Group-2</p>
+</div>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Tuesday</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-7</p>
+<p class="btmrt btmore subTextMin">ECE-SQ</p>
+<p class="toprt toprtLess subTextMin">Group-1</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-8</p>
+<p class="btmrt btmore subTextMin">ECE-SH</p>
+<p class="toprt toprtLess subTextMin">Group-2</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-13</p>
+<p class="btmrt btmore subTextMin">ECE-IK</p>
+<p class="toprt toprtLess subTextMin">Group-3</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-308</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-10</p>
+<p class="btmrt btmore subTextMin">SKS</p>
+<p class="toprt toprtLess subTextMin">Group-4</p>
+</div>
+</div>
+<div class="subCell subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-2</p>
+<p class="btmrt btmore subTextMin">CA-Farooq</p>
+<p class="toprt toprtLess subTextMin">Group-5</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-1</p>
+<p class="btmrt subText">ECE-ZHK</p>
+</div>
+</div>
+</td>
+
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">PPP-(Apti)</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-1</p>
+<p class="btmrt subText">CCGD-SR</p>
+</div>
+</div>
+</td>
+
+
+<td colspan="3">
+<div class="subCell subBorder subHalf">
+<div class="subCellCh">
+<p class="subject">CA-310</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-4</p>
+<p class="btmrt subText">MI/TSS-CA-Adnan</p>
+<p class="toprt subText">Group-1</p>
+</div>
+</div>
+<div class="subCell subHalf subShift">
+<div class="subCell subFull subWidth1">
+<div class="subCellCh">
+<p class="subject">CA-312</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-6</p>
+<p class="btmrt subText">MSAI/Tss-CA-FA</p>
+<p class="toprt subText">Group-2</p>
+</div>
+</div>
+<div class="subFull subWidth2 subRight">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Wednesday</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-301</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">MSAI</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">ECE-ZHK</p>
+</div>
+</div>
+</td>
+
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">NJ</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-10</p>
+<p class="btmrt subText">MI</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">PPP(Soft Skill)</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-10</p>
+<p class="btmrt subText">CCGD SA</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Thursday</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-8</p>
+<p class="btmrt btmore subTextMin">ECE-SQ</p>
+<p class="toprt toprtLess subTextMin">Group-1</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">FLT-3</p>
+<p class="btmrt btmore subTextMin">ECE-SH</p>
+<p class="toprt toprtLess subTextMin">Group-2</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-8</p>
+<p class="btmrt btmore subTextMin">ECE-IK</p>
+<p class="toprt toprtLess subTextMin">Group-3</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-308</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-13</p>
+<p class="btmrt btmore subTextMin">SKS</p>
+<p class="toprt toprtLess subTextMin">Group-4</p>
+</div>
+</div>
+<div class="subCell subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-10</p>
+<p class="btmrt btmore subTextMin">CA-Farooq</p>
+<p class="toprt toprtLess subTextMin">Group-5</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-10</p>
+<p class="btmrt subText">MI</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-304</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-2</p>
+<p class="btmrt subText">NJ</p>
+</div>
+</div>
+</td>
+
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-301</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">LT-12</p>
+<p class="btmrt subText">MSAI</p>
+</div>
+</div>
+</td>
+
+<td colspan="2">
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Friday</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-304</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">LT-10</p>
+<p class="btmrt subText">NJ</p>
+</div>
+</div>
+</td>
+
+<td colspan="3">
+
+<div class="subCell subBorder subHalf">
+
+<div class="subFull subWidth2">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+<div class="subFull subWidth1 subRight">
+<div class="subCellCh">
+<p class="subject">CA-312</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-6</p>
+<p class="btmrt subText">MSAI/TSS-CA-FA</p>
+<p class="toprt subText">Group-1</p>
+</div>
+</div>
+
+</div>
+
+<div class="subCell subHalf">
+<div class="subCellCh">
+<p class="subject">CA-311</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">CA-1</p>
+<p class="btmrt subText">NJ/TSS-CA-EFS</p>
+<p class="toprt subText">Group-2</p>
+</div>
+</div>
+
+
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Library</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-10</p>
+<p class="btmrt subText">ECE-ZHK</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-303</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-10</p>
+<p class="btmrt subText">ECE-ZHK</p>
+</div>
+</div>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">Saturday</p>
+</div>
+</div>
+</td>
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-304</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">NJ</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">MI</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subFull">
+<div class="subCellCh">
+<p class="subject">CA-301</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft subText">BNLT-7</p>
+<p class="btmrt subText">MSAI</p>
+</div>
+</div>
+</td>
+
+<td>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-8</p>
+<p class="btmrt btmore subTextMin">ECE-SQ</p>
+<p class="toprt toprtLess subTextMin">Group-1</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-2</p>
+<p class="btmrt btmore subTextMin">ECE-SH</p>
+<p class="toprt toprtLess subTextMin">Group-2</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-307</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">BNLT-7</p>
+<p class="btmrt btmore subTextMin">ECE-IK</p>
+<p class="toprt toprtLess subTextMin">Group-3</p>
+</div>
+</div>
+<div class="subCell subBorder subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-308</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-13</p>
+<p class="btmrt btmore subTextMin">SKS</p>
+<p class="toprt toprtLess subTextMin">Group-4</p>
+</div>
+</div>
+<div class="subCell subFive">
+<div class="subCellCh">
+<p class="subjectMin">CA-302</p>
+</div>
+<div class="subCellCh">
+<p class="btmlft btmore subTextMin">LT-12</p>
+<p class="btmrt btmore subTextMin">CA-Farooq</p>
+<p class="toprt toprtLess subTextMin">Group-5</p>
+</div>
+</div>
+</td>
+
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+</table>
+</body>
+</html>
